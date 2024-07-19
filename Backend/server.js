@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: '*',  // Allow your frontend's origin
+    origin: '*',  // Allow from any Frontend origin
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
@@ -19,7 +19,7 @@ const io = socketIo(server, {
 const SECRET_KEY = 'MasaiEval';
 
 // Middleware
-app.use(cors());  // Use the CORS middleware
+app.use(cors());  
 app.use(express.json());
 
 let tasks = [];

@@ -16,7 +16,7 @@ const io = socketIo(server, {
   }
 });
 
-const SECRET_KEY = 'your_secret_key';
+const SECRET_KEY = 'MasaiEval';
 
 // Middleware
 app.use(cors());  // Use the CORS middleware

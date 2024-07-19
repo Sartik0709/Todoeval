@@ -9,9 +9,9 @@ const RegisterPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:4000/register', { username, password });
+      await axios.post('https://todoeval.onrender.com/register', { username, password });
       alert('User registered successfully');
-      navigation('tasks')
+      navigation('/tasks')
     } catch (error) {
       alert('Error registering user');
     }

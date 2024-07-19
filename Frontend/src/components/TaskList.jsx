@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import TaskForm from './TaskForm';
 
-const socket = io('http://localhost:4000', {
+const socket = io('https://todoeval.onrender.com', {
   auth: {
     token: localStorage.getItem('token')
   }
